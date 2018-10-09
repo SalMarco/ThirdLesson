@@ -12293,10 +12293,10 @@ acc: 97.93%
 
  
  
-<div id="26e439c0-df25-4a27-9376-94dd84ac2217"></div>
+<div id="93084302-c1f7-46f8-91b6-0725df83bb60"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#26e439c0-df25-4a27-9376-94dd84ac2217');
+var element = $('#93084302-c1f7-46f8-91b6-0725df83bb60');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "a9834503e29244f39fc0c0f152dbdfe1", "version_major": 2, "version_minor": 0}
@@ -12510,7 +12510,7 @@ var element = $('#26e439c0-df25-4a27-9376-94dd84ac2217');
         <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;NROWS BEFORE REMOVING NA </span><span class="si">%i</span><span class="s1">&#39;</span><span class="p">,</span><span class="n">dfTrain</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
         <span class="n">dfTrain</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
         <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;NROWS AFTER REMOVING NA </span><span class="si">%i</span><span class="s1">&#39;</span><span class="p">,</span><span class="n">dfTrain</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-        <span class="n">X_train</span> <span class="o">=</span> <span class="n">dfTrain</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;resp&#39;</span><span class="p">])</span>
+        <span class="n">X_train</span> <span class="o">=</span> <span class="n">dfTrain</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;resp&#39;</span><span class="p">,</span><span class="s1">&#39;customer_id&#39;</span><span class="p">])</span>
         <span class="n">Y_train</span> <span class="o">=</span> <span class="n">dfTrain</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="s1">&#39;resp&#39;</span><span class="p">]</span>
         <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;SCALING OF NUMERIC COLUMNS&#39;</span><span class="p">)</span>
         <span class="n">mmscaler</span> <span class="o">=</span> <span class="n">preprocessing</span><span class="o">.</span><span class="n">MinMaxScaler</span><span class="p">()</span>
@@ -12518,6 +12518,7 @@ var element = $('#26e439c0-df25-4a27-9376-94dd84ac2217');
         <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;CONSIDERING LEVELS FOR CATEGORICAL COLUMNS&#39;</span><span class="p">)</span>
         <span class="k">for</span> <span class="n">curCol</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;avg_bal&#39;</span><span class="p">,</span><span class="s1">&#39;geo_group&#39;</span><span class="p">,</span> <span class="s1">&#39;res_type&#39;</span><span class="p">]:</span>
             <span class="n">X_train</span><span class="p">[</span><span class="n">curCol</span><span class="p">]</span> <span class="o">=</span> <span class="n">dfTrain</span><span class="p">[</span><span class="n">curCol</span><span class="p">]</span><span class="o">.</span><span class="n">cat</span><span class="o">.</span><span class="n">codes</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;AFTER PREPROCESSING X_train HAS COLUMUNS </span><span class="si">%s</span><span class="s1"> AND TYPES </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span><span class="nb">str</span><span class="p">(</span><span class="n">X_train</span><span class="o">.</span><span class="n">columns</span><span class="p">),</span><span class="nb">str</span><span class="p">(</span><span class="n">X_train</span><span class="o">.</span><span class="n">dtypes</span><span class="p">))</span>
         <span class="k">return</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">Y_train</span>
 
 <span class="k">class</span> <span class="nc">CreateNN</span><span class="p">:</span>
@@ -13091,10 +13092,10 @@ Epoch 30/30
 
  
  
-<div id="6979face-3a2a-4aed-af4a-4c7094e5094b"></div>
+<div id="7b555ffe-b5f3-4c47-b96b-77383074ce76"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#6979face-3a2a-4aed-af4a-4c7094e5094b');
+var element = $('#7b555ffe-b5f3-4c47-b96b-77383074ce76');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "9fc816d62062490b9c2ab268f5461198", "version_major": 2, "version_minor": 0}
