@@ -1,5 +1,9 @@
 # Third Lesson
 
+## Link to Slides
+
+[Slides Third Lesson](https://salmarco.github.io/ThirdLesson/Lesson3-1.html#/)
+
 ## How to install Keras
 
 ### Mac/Linux
